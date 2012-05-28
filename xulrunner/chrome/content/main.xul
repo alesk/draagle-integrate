@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<window 
+    id="main" 
+    title="Draagle" 
+    hidechrome="true"
+    sizemode="maximized"
+    fullScreen="true"
+    onload="window.setTimeout( function(aWindow) {
+    aWindow.fullScreen = true;
+    },0,window,doNav(this));"
+    
+
+    
+xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<button label="Zapri" oncommand="window.close();"/>
+
+
+<iframe id="myFrame" flex="1" type="content"/>
+<script type="application/javascript" src="chrome://draagle/content/main.js"/>
+
+</window>
+
