@@ -9,6 +9,6 @@ function doNav(obj){
 
   url = "http://draagle.medicina-danes.si/#!/basket/new/"+drugs.join("+")+"/"
   // note the firstChild is the menupopup element
-  alert(url);
+  // alert(url);
   document.getElementById('myFrame').setAttribute('src', url);
 }
