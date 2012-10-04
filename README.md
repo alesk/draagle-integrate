@@ -12,9 +12,9 @@ Priporoča se brskalnik, ki podpira html5.
 
 ## Internet Explorer na Windows
 
-Klicanje programa internet explorer iz ukazne vrstice:
+Klicanje programa Internet Explorer iz ukazne vrstice:
 
-    "%PROGRAMFILES%\Internet Explorer\iexplore.exe" -k http://si.draagle.com/basket/show/020419+013137?close_button=true  
+    "%PROGRAMFILES%\Internet Explorer\iexplore.exe" -k http://si.draagle.com/basket/show/020419+013137
 
 Opcijo `-k`, ki pomeni, da se ie zažene v načinu kiosk brez vidnega okna in kontrol, lahko izpustite.
 
@@ -22,7 +22,7 @@ Opcijo `-k`, ki pomeni, da se ie zažene v načinu kiosk brez vidnega okna in ko
 
 Klicanje s programom firefox:
 
-    "%PROGRAMFILES%\Mozilla Firefox\Firefox.exe" -new-window http://si.draagle.com/basket/show/020419+013137?close_button=true  
+    "%PROGRAMFILES%\Mozilla Firefox\Firefox.exe" -new-window http://si.draagle.com/basket/show/020419+013137
 
 Dodamo lahko še opcije `-fullscreen` za celozaslonski prikaz, ali določimo velikost okna z `-width 1024 -height 768`.
 
@@ -42,7 +42,7 @@ Na macu se firefox nahaja v `/Applications/Firefox.app/Contents/MacOS/firefox-bi
 
 ## Api
 
-Prikz košarice z zdravili s kodo `drug_id1` in `drug_id2`. Koda `drug_id` je lahko zavodova širfa, šifra nensi ali koda EAN pakiranja zdravila.
+Prikaz košarice z zdravili s kodo `drug_id1` in `drug_id2`. Koda `drug_id` je lahko zavodova širfa, šifra nensi ali koda EAN pakiranja zdravila.
 
     /basket/new/drug_id1+drug_id2/?close_button=true
 
