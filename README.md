@@ -1,27 +1,30 @@
-# Integracija Draagla v lekarniško ali ambulantno aplikacijo
+# Klicanje Draagla iz lekarniške ali ambulantne aplikacije
 
 ## Prerekviziti
 
-Nameščen mora biti brskalnik Microsoft Internet Explorer 7 ali novejši ali Firefox 3 ali novejši. Priporoča se brskalnik, ki podpira html5.
+Nameščen mora biti eden od podprtih brskalnikov:
 
-## Internet Explorer
+  * Microsoft Internet Explorer 7 ali novejši
+  * Firefox 3 ali novejši
+  * Google Chrome 
+  
+Priporoča se brskalnik, ki podpira html5.
 
-Klicanje programa internet explorer iz ukazne vrstice, kot je opisano na [microsoftovi strani](http://msdn.microsoft.com/en-us/library/hh826025(v=vs.85).aspx)
+## Internet Explorer na Windows
 
-    c:\Program\ Files\Internet\ Explorer\iexplore.exe -k http://si.draagle.com/basket/show/020419+013137?close_button=true  
+Klicanje programa internet explorer iz ukazne vrstice:
+
+    "%PROGRAMFILES%\Internet Explorer\iexplore.exe" -k http://si.draagle.com/basket/show/020419+013137?close_button=true  
 
 Opcijo `-k`, ki pomeni, da se ie zažene v načinu kiosk brez vidnega okna in kontrol, lahko izpustite.
 
-## Firefox
+## Firefox na Windows
 
 Klicanje s programom firefox:
 
-    C:\Program\ Files\Mozilla\ Firefox\Firefox.exe -new-window http://si.draagle.com/basket/show/020419+013137?close_button=true  
+    "%PROGRAMFILES%\Mozilla Firefox\Firefox.exe" -new-window http://si.draagle.com/basket/show/020419+013137?close_button=true  
 
 Dodamo lahko še opcije `-fullscreen` za celozaslonski prikaz, ali določimo velikost okna z `-width 1024 -height 768`.
-
-Parameter `close_button=true` dodamo zato, da se pojavi gumb za zapiranje aplikacije.
-
 
 ## Firefox na Mac OSX
 
@@ -29,10 +32,26 @@ Na macu se firefox nahaja v `/Applications/Firefox.app/Contents/MacOS/firefox-bi
 
     /Applications/Firefox.app/Contents/MacOS/firefox-bin http://si.draagle.com/ -width 1024 -height 768
 
+## Chrome na Windows
+
+"%USERPROFILE%\Local Settings\Application Data\Google\Chrome\Application\chrome.exe" --kiosk http://si.draagle.com
+
+## Chrome na Mac OSX
+
+    /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --kiosk --user-data-dir=/tmp --app=http://si.draagle.com/
+
 ## Api
 
 Prikz košarice z zdravili s kodo `drug_id1` in `drug_id2`. Koda `drug_id` je lahko zavodova širfa, šifra nensi ali koda EAN pakiranja zdravila.
 
-    /basket/new/drug_id1+drug_id2/
+    /basket/new/drug_id1+drug_id2/?close_button=true
+
+Url parameter `close_button=true` dodamo zato, da se pojavi gumb za zapiranje aplikacije.
 
 Dodali bomo še ostale url-je.
+
+## Reference
+
+  1. [Windows Environment Variables](http://www.wilsonmar.com/1envvars.htm)
+  2. [Google Chrome command line switches](http://peter.sh/experiments/chromium-command-line-switches/)
+  3. [Firefox commandline switches](http://kb.mozillazine.org/Command_line_arguments)
