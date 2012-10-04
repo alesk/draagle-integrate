@@ -2,25 +2,37 @@
 
 ## Prerekviziti
 
-  1. Firefox 3 ali novejši.
+Nameščen mora biti brskalnik Microsoft Internet Explorer 7 ali novejši ali Firefox 3 ali novejši. Priporoča se brskalnik, ki podpira html5.
 
-  2. Namesto firefoxa lahko namestite tudi Mozilla Xulrunner, ki je okleščena
-izdaja firefoxa namenjena poganjanju spletnih aplikacij. Zadnja verzija je na naslovu:
+## Internet Explorer
 
-  https://developer.mozilla.org/en-US/docs/XULRunner
+Klicanje programa internet explorer iz ukazne vrstice, kot je opisano na [microsoftovi strani](http://msdn.microsoft.com/en-us/library/hh826025(v=vs.85).aspx)
+
+    c:\Program\ Files\Internet\ Explorer\iexplore.exe -k http://si.draagle.com/basket/show/020419+013137?close_button=true  
+
+Opcijo `-k`, ki pomeni, da se ie zažene v načinu kiosk brez vidnega okna in kontrol, lahko izpustite.
+
+## Firefox
+
+Klicanje s programom firefox:
+
+    C:\Program\ Files\Mozilla\ Firefox\Firefox.exe -new-window http://si.draagle.com/basket/show/020419+013137?close_button=true  
+
+Dodamo lahko še opcije `-fullscreen` za celozaslonski prikaz, ali določimo velikost okna z `-width 1024 -height 768`.
+
+Parameter `close_button=true` dodamo zato, da se pojavi gumb za zapiranje aplikacije.
 
 
-## Klicanje aplikacije Draagle
+## Firefox na Mac OSX
 
-Če uporabljate firefox, kličite s prvim argumentom `-app`, XulRunner argumenta `-app` ne potrebuje.
-Naslednji argument morata biti pot do datoteke `application.ini`, sledi pa naj seznam kod ean ali zavodovih šifer ločenih z 
-znakom `+`.
+Na macu se firefox nahaja v `/Applications/Firefox.app/Contents/MacOS/firefox-bin`. Primer klica:
 
-Windows:
+    /Applications/Firefox.app/Contents/MacOS/firefox-bin http://si.draagle.com/ -width 1024 -height 768
 
-    C:\Program\ Files\Mozilla\ Firefox\Firefox.exe -app xulreuner/application.ini 020419+013137
+## Api
 
-Na Mac OSX:
+Prikz košarice z zdravili s kodo `drug_id1` in `drug_id2`. Koda `drug_id` je lahko zavodova širfa, šifra nensi ali koda EAN pakiranja zdravila.
 
-    /Applications/Firefox.app/Contents/MacOS/firefox-bin -app $PWD/xulrunner/application.ini 020419+013137
+    /basket/new/drug_id1+drug_id2/
 
+Dodali bomo še ostale url-je.
