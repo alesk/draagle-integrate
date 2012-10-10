@@ -44,15 +44,16 @@ Na macu se firefox nahaja v `/Applications/Firefox.app/Contents/MacOS/firefox-bi
 
 ### Identifikacija uporabnika
 
-Uporabnika identificirate s parametrom `recipe_id`. Primer:
+Uporabnika identificirate s parametrom `recipe_id`, ki pa mora biti del `poti` in ne del `fragmenta`. Primer:
  
-    /#!/basket/new/drug_id1+drug_id2/?close_button=true&recipe_id=55555
+    http://si.draagle.com/?recipe_id=33090#!/basket/new/020419+013137/?close_button=true
 
 
 ### Košarica z zdravili
-Prikaz košarice z zdravili s kodo `drug_id1` in `drug_id2`. Koda `drug_id` je lahko zavodova širfa, šifra nensi ali koda EAN pakiranja zdravila.
+Prikaz košarice z zdravili s kodo `drug_id1 = 929419`  in `drug_id2 = 013137`. Koda `drug_id` je lahko zavodova širfa, šifra nensi ali koda EAN pakiranja zdravila.
 
-    /#!/basket/new/drug_id1+drug_id2/?close_button=true&recipe_id=55555
+    http://si.draagle.com/?recipe_id=33090#!/basket/new/020419+013137/?close_button=true
+
 
 Url parameter `close_button=true` dodamo zato, da se pojavi gumb za zapiranje aplikacije.
 
