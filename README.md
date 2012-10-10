@@ -45,8 +45,8 @@ Na macu se firefox nahaja v `/Applications/Firefox.app/Contents/MacOS/firefox-bi
 ### Identifikacija uporabnika
 
 Uporabnika identificirate s parametrom `recipe_id`. Primer:
-    
-  /#!/basket/new/drug_id1+drug_id2/?close_button=true&recipe_id=55555
+ 
+    /#!/basket/new/drug_id1+drug_id2/?close_button=true&recipe_id=55555
 
 
 ### Košarica z zdravili
