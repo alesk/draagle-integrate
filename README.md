@@ -34,7 +34,7 @@ Na macu se firefox nahaja v `/Applications/Firefox.app/Contents/MacOS/firefox-bi
 
 ## Chrome na Windows
 
-"%USERPROFILE%\Local Settings\Application Data\Google\Chrome\Application\chrome.exe" --kiosk http://si.draagle.com
+    "%USERPROFILE%\Local Settings\Application Data\Google\Chrome\Application\chrome.exe" --kiosk http://si.draagle.com
 
 ## Chrome na Mac OSX
 
@@ -47,6 +47,8 @@ Na macu se firefox nahaja v `/Applications/Firefox.app/Contents/MacOS/firefox-bi
 Uporabnika identificirate s parametrom `recipe_id`, ki pa mora biti del `poti` in ne del `fragmenta`. Primer:
  
     http://si.draagle.com/?recipe_id=33090#!/basket/new/020419+013137/?close_button=true
+
+Identifikatorje lekarn ali ambulant nam pošljite vnaprej na naslov [ales.kotnik@draagle.com](mailto:ales.kotnik@draagle.com) , da jim pripravimo uporabniške račune.
 
 
 ### Košarica z zdravili
