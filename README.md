@@ -14,7 +14,7 @@ Priporoča se brskalnik, ki podpira html5.
 
 Na sliki je primer povezave lekarniške aplikacije `Recipe` z Draagle:
 
-![Povezava med Recipe in Draagle](/alesk/draagle-integrate/downloads/recipe.jpg)
+![Povezava med Recipe in Draagle](/downloads/alesk/draagle-integrate/recipe.jpg)
 
 ## Internet Explorer na Windows
 
