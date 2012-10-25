@@ -10,13 +10,19 @@ Nameščen mora biti eden od podprtih brskalnikov:
   
 Priporoča se brskalnik, ki podpira html5.
 
+## Primer povezave
+
+Na sliki je primer povezave lekarniške aplikacije `Recipe` z Draagle:
+
+![Povezava med Recipe in Draagle](/alesk/draagle-integrate/downloads/recipe.jpg)
+
 ## Internet Explorer na Windows
 
 Klicanje programa Internet Explorer iz ukazne vrstice:
 
     "%PROGRAMFILES%\Internet Explorer\iexplore.exe" -k http://si.draagle.com/#!/basket/new/020419+013137/
 
-Opcijo `-k`, ki pomeni, da se ie zažene v načinu kiosk brez vidnega okna in kontrol, lahko izpustite.
+Opcijo `-k`, ki pomeni, da se Internet Explorer zažene v načinu kiosk brez vidnega okna in kontrol, lahko izpustite.
 
 ## Firefox na Windows
 
@@ -48,8 +54,8 @@ Uporabnika identificirate s parametrom `recipe_id`, ki pa mora biti del `poti` i
  
     http://si.draagle.com/?recipe_id=33090#!/basket/new/020419+013137/?close_button=true
 
-Identifikatorje lekarn ali ambulant nam pošljite vnaprej na naslov [ales.kotnik@draagle.com](mailto:ales.kotnik@draagle.com) , da jim pripravimo uporabniške račune.
-
+Identifikatorje lekarn ali ambulant (šifre izvajalcev zdravstvenega varstva) nam pošljite vnaprej na naslov [ales.kotnik@draagle.com](mailto:ales.kotnik@draagle.com) , 
+da jim pripravimo uporabniške račune.
 
 ### Košarica z zdravili
 Prikaz košarice z zdravili s kodo `drug_id1 = 929419`  in `drug_id2 = 013137`. Koda `drug_id` je lahko zavodova širfa, šifra nensi ali koda EAN pakiranja zdravila.
@@ -59,7 +65,7 @@ Prikaz košarice z zdravili s kodo `drug_id1 = 929419`  in `drug_id2 = 013137`. 
 
 Url parameter `close_button=true` dodamo zato, da se pojavi gumb za zapiranje aplikacije.
 
-Dodali bomo še ostale url-je.
+
 
 ## Reference
 
